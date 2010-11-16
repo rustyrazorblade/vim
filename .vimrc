@@ -40,3 +40,5 @@ let Tlist_Sort_Type = "name"
 let NERDTreeChDirMode = 2
 
 
+call pathogen#runtime_append_all_bundles() 
+
