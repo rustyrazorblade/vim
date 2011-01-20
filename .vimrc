@@ -16,6 +16,7 @@ set scrolloff=3
 set splitright
 set ruler
 
+set scrolloff=12
 
 filetype plugin on
 
