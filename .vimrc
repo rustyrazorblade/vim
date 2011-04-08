@@ -11,7 +11,6 @@ set tabstop=4
 set nobackup
 set noswapfile
 set shiftwidth=4
-set fuopt+=maxhorz
 set scrolloff=3
 set splitright
 set ruler
@@ -22,7 +21,6 @@ filetype plugin on
 
 
 let g:CommandTMaxHeight=20
-CommandTFlush
 
 map <D-B> :!erlc -I includes -o ebin %  <CR>
 
