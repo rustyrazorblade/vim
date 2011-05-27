@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/jhaddad/dev/gameserver'
 let g:netrw_dirhist_2='/Volumes/192.168.100.26/jhaddad.dev.treatfeed.local'
 let g:netrw_dirhist_3='/Users/jhaddad/Downloads/Trac-0.11.7/contrib/workflow'
 let g:netrw_dirhist_4='/Users/jhaddad/treatfeed'
+let g:netrw_dirhist_5='/etc/cron.d'

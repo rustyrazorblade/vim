@@ -14,6 +14,7 @@ set shiftwidth=4
 set scrolloff=3
 set splitright
 set ruler
+set wildmenu
 
 set scrolloff=12
 
