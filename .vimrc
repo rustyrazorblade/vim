@@ -18,6 +18,7 @@ set wildmenu
 
 set scrolloff=12
 
+filetype on
 filetype plugin on
 
 
@@ -39,6 +40,11 @@ let Tlist_WinWidth = 40
 let Tlist_Sort_Type = "name"
 let NERDTreeChDirMode = 2
 
+let g:pyflakes_use_quickfix = 0
+
 
 call pathogen#runtime_append_all_bundles() 
 
+autocmd BufNewFile,BufRead *.py compiler nose
+
+	
