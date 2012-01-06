@@ -1,4 +1,5 @@
-colorscheme wombat
+colorscheme mayansmoke
+
 set cindent
 set number
 set ci
@@ -49,9 +50,9 @@ let g:pyflakes_use_quickfix = 0
 
 call pathogen#runtime_append_all_bundles() 
 
-autocmd BufNewFile,BufRead *.py compiler nose
+" autocmd BufNewFile,BufRead *.py compiler nose
 	
-inoremap <c-space> <c-x><c-o>
+" inoremap <c-space> <c-x><c-o>
 
 
 if !exists("autocommands_loaded")
