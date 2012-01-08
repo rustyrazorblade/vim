@@ -66,6 +66,7 @@ map <D-p> :TlistToggle<CR>
 colorscheme mayansmoke
 
 
+let NERDTreeIgnore=['\~$','.*pyc']
 let g:CommandTMaxHeight=20
 
 map <D-B> :!erlc -I includes -o ebin %  <CR>
