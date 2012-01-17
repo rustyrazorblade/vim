@@ -67,6 +67,7 @@ colorscheme mayansmoke
 
 
 let NERDTreeIgnore=['\~$','.*\.pyc$']
+let NERDTreeQuitOnOpen=1
 let g:CommandTMaxHeight=20
 
 map <D-B> :!erlc -I includes -o ebin %  <CR>
@@ -99,7 +100,7 @@ call pathogen#runtime_append_all_bundles()
 
 if !exists("autocommands_loaded")
   let autocommands_loaded = 1
-  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python
+  autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/python.vim
 endif
 
 " This beauty remembers where you were the last time you edited the file, and returns to the same position.
