@@ -15,7 +15,7 @@ set ruler
 set wildmenu
 set smarttab
 
-set scrolloff=12
+set scrolljump=5
 
 filetype on
 filetype plugin on
@@ -80,18 +80,14 @@ set guifont=Inconsolata:h16
 
 let tlist_php_settings = 'php;c:class;f:function'
 
-let Tlist_Use_Right_Window = 1
-let Tlist_Show_One_File = 1
 let Tlist_WinWidth = 40
 let Tlist_Sort_Type = "name"
+let Tlist_Auto_Highlight_Tag = 0
 let NERDTreeChDirMode = 2
 
 set expandtab
 
 let g:pyflakes_use_quickfix = 0
-
-
-call pathogen#runtime_append_all_bundles() 
 
 " autocmd BufNewFile,BufRead *.py compiler nose
     
@@ -109,7 +105,7 @@ au BufNewFile,BufRead *.coffee set ft=coffee.jquery
 
 let g:snipMate = {}
 let g:snipMate.scope_aliases = {} 
-let g:snipMate.scope_aliases['coffee'] = 'coffee,jquery'
+let g:snipMate.scope_aliases['coffee'] = 'coffee,jquery,html'
 
 
 
