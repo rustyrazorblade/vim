@@ -14,6 +14,7 @@ set splitright
 set ruler
 set wildmenu
 set smarttab
+set ignorecase
 
 set scrolljump=5
 
@@ -44,7 +45,7 @@ fun SetupVAM()
   " be installed form www.vim.org. Lookup MergeSources to get more control
   " let g:vim_addon_manager['drop_git_sources'] = !executable('git')
 
-  call vam#ActivateAddons(['snipmate','snipmate-snippets','ack', 'The_NERD_tree','taglist', 'bufexplorer.zip','Conque_Shell','vim-coffee-script','pyflakes%2441','Wombat','mayansmoke'], {'auto_install' : 0})
+  call vam#ActivateAddons(['snipmate','snipmate-snippets','ack', 'The_NERD_tree','taglist-plus', 'bufexplorer.zip','Conque_Shell','vim-coffee-script','pyflakes%2441','Wombat','mayansmoke'], {'auto_install' : 0})
   " sample: call vam#ActivateAddons(['pluginA','pluginB', ...], {'auto_install' : 0})
   " where 'pluginA' could be "git://" "github:YourName" or "snipmate-snippets" see vam#install#RewriteName()
   " also see section "5. Installing plugins" in VAM's documentation
@@ -67,7 +68,7 @@ colorscheme mayansmoke
 
 
 let NERDTreeIgnore=['\~$','.*\.pyc$']
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=0
 let g:CommandTMaxHeight=20
 
 map <D-B> :!erlc -I includes -o ebin %  <CR>
