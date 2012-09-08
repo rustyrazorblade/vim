@@ -1,7 +1,5 @@
 
-set cindent
 set number
-set ci
 set hls is
 
 
@@ -45,7 +43,7 @@ fun SetupVAM()
   " be installed form www.vim.org. Lookup MergeSources to get more control
   " let g:vim_addon_manager['drop_git_sources'] = !executable('git')
 
-  call vam#ActivateAddons(['snipmate','snipmate-snippets','ack', 'The_NERD_tree','taglist-plus', 'bufexplorer.zip','Conque_Shell','vim-coffee-script','pyflakes%2441','Wombat','mayansmoke'], {'auto_install' : 0})
+  call vam#ActivateAddons(['ack', 'The_NERD_tree','Tagbar', 'bufexplorer.zip','Conque_Shell','vim-coffee-script','syntastic','Wombat','mayansmoke','SuperTab'], {'auto_install' : 0})
   " sample: call vam#ActivateAddons(['pluginA','pluginB', ...], {'auto_install' : 0})
   " where 'pluginA' could be "git://" "github:YourName" or "snipmate-snippets" see vam#install#RewriteName()
   " also see section "5. Installing plugins" in VAM's documentation
@@ -73,17 +71,19 @@ let g:CommandTMaxHeight=20
 
 map <D-B> :!erlc -I includes -o ebin %  <CR>
 
-map <Leader>a :Ack 
+map <Leader>a :Ack! 
 
-map <Leader>p :Tlist<CR>
+map <Leader>p :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
+
 
 set guifont=Inconsolata:h16  
 
-let tlist_php_settings = 'php;c:class;f:function'
-
-let Tlist_WinWidth = 40
-let Tlist_Sort_Type = "name"
-let Tlist_Auto_Highlight_Tag = 0
+"let tlist_php_settings = 'php;c:class;f:function'
+" let Tlist_WinWidth = 40
+" let Tlist_Sort_Type = "name"
+" let Tlist_Auto_Highlight_Tag = 0
+"
 let NERDTreeChDirMode = 2
 
 set expandtab
@@ -109,7 +109,25 @@ let g:snipMate.scope_aliases = {}
 let g:snipMate.scope_aliases['coffee'] = 'coffee,jquery,html'
 
 
+let $MACOSX_DEPLOYMENT_TARGET = "10.7"
+
+
+let $ACKRC=".ackrc"
+
+" buf explorer
+let g:bufExplorerDetailedHelp=1
+let g:bufExplorerShowRelativePath=1
+let g:bufExplorerSortBy='name'
+let g:bufExplorerFindActive=0
+
+let g:CommandTMaxFiles=20000
+let g:CommandTMaxDepth=20
 
 
 
+map <leader>s g<c-]>
+
+set textwidth=0
+
+set linebreak
 
