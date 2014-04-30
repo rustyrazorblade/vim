@@ -25,7 +25,7 @@ map <leader>s g<c-]>
 set textwidth=0
 
 set linebreak
-colorscheme mayansmoke
+colorscheme wombat
 
 fun! EnsureVamIsOnDisk(vam_install_path)
   " windows users may want to use http://mawercer.de/~marc/vam/index.php
@@ -77,6 +77,8 @@ fun! SetupVAM()
   " call vam#ActivateAddons([], {'auto_install' : 1})
   call vam#ActivateAddons(['ack', 'The_NERD_tree','Tagbar', 'bufexplorer.zip','Conque_Shell','vim-coffee-script','Wombat','mayansmoke','SuperTab%182'], {'auto_install' : 1})
   call vam#ActivateAddons(['Syntastic'], {'auto_install' : 1})
+  " call vam#ActivateAddons(['Markdown'], {'auto_install' : 1})
+  call vam#ActivateAddons(['instant-markdown'], {'auto_install' : 1})
 
   " sample: call vam#ActivateAddons(['pluginA','pluginB', ...], {'auto_install' : 0})
 
